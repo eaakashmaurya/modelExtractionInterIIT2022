@@ -33,6 +33,7 @@ jobs:
       - name: Request utility-prod deployment approval
         uses: trstringer/manual-approval@v1.8.0
         with:
+          timeout-minutes: 1
           approvers: eaakashmaurya
           secret: ${{ github.TOKEN }}
           minimum-approvals: 1
